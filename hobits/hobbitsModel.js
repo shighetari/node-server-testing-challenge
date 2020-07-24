@@ -18,7 +18,7 @@ module.exports = {
 
 function remove(id) {
     return db('hobbits')
-    .where(id)
+    .where({id})
     .delete()
 
 }

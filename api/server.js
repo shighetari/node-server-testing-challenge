@@ -32,7 +32,7 @@ server.post('/hobbits', (req, res) => {
 })
 
 server.delete('/hobbits/:id', (req, res) => {
-    const { id } = req.params
+    const { id } = req.params;
     Hobbits.remove(id)
         .then(result => {
             res.status(200).json(result)
